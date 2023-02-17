@@ -7,7 +7,7 @@ data "aws_vpc" "myvpc" {
 
 data "aws_subnet" "subnets" {
     filter {
-        name = "availabilityzone"
+        name = "availability-zone"
         values = ["us-east-1a","us-east-1b"]
     }
 }
