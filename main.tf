@@ -1,5 +1,8 @@
 data "aws_vpc" "myvpc" {
-    default = true
+    filter {
+        name = "region"
+        value = "us-east-1"
+    }
 }
 
 output "vpc_id" {
