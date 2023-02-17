@@ -3,6 +3,7 @@ data "aws_vpc" "myvpc" {
         name = "cidr"
         values = ["192.168.0.0/16"]
     }
+}
 
 data "aws_subnet" "subnets" {
     filter {
