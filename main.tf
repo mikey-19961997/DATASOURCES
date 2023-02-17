@@ -3,5 +3,5 @@ data "aws_vpc" "myvpc" {
 }
 
 output "vpc" {
-    value = data.aws_vpc.myvpc.cidr_block
+    value = data.aws_vpc.myvpc.id
 }
