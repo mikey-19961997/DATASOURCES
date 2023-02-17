@@ -1,7 +1,7 @@
 data "aws_vpc" "myvpc" {
-    cidr_block = aws_vpc.myvpc
+    Name = "mikey-vpc1"
 }
 
 output "cidr_block" {
-    value = aws_vpc.myvpc
+    value = aws_vpc.myvpc.Name
 }
