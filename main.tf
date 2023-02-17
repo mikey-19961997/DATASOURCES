@@ -1,7 +1,7 @@
 data "aws_vpc" "myvpc" {
     filter {
-        name = "vpc_name"
-        values = ["mikey-vpc1"]
+        name = "cidr"
+        values = ["192.168.0.0/16"]
     }
 }
 
