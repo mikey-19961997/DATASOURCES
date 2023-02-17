@@ -1,7 +1,7 @@
 data "aws_vpc" "myvpc" {
     filter {
         name = "region"
-        values = "us-east-1"
+        values = ["us-east-1"]
     }
 }
 
