@@ -13,7 +13,7 @@ data "aws_subnet" "subnets" {
 }
 
 data "aws_subnet" "subnet1" {
-    filters {
+    filter {
         name = "cidr-block"
         values = ["192.168.0.0/16"]
     }
