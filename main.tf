@@ -17,5 +17,5 @@ output "vpc_id" {
 }
 
 output "subnetids" {
-    value = data.aws_subnet.subnets.ids
+    value = data.aws_subnet.subnets.id
 }
